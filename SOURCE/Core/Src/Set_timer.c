@@ -51,7 +51,7 @@ void update7SEG(int index){
 
 int counter1 = 100;
 int counter = 100;
-int counter2=50;
+int counter2=25;
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	counter--;
 	if(counter <= 0){
@@ -65,7 +65,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	}
 	counter2--;
 	if(counter2 <= 0){
-		counter2 = 50;
+		counter2 = 25;
 		switch(index_led){
 		case 0:
 			update7SEG(index_led);
