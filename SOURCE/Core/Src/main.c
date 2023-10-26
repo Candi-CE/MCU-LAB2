@@ -56,7 +56,7 @@ static void MX_TIM2_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-int hour = 15, minute = 19, second = 55;
+int hour = 15, minute = 99, second = 50;
 const int MAX_LED = 4;
 
 int led_buffer[4] = {2, 8, 0, 6};
