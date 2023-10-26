@@ -144,7 +144,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-
+  setTimer1(1000);
   while(1){
       second++;
       if (second >= 60){
@@ -159,7 +159,7 @@ int main(void)
           hour = 0;
       }
       updateClockBuffer();
-      HAL_Delay(1000);
+      setTimer1(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
